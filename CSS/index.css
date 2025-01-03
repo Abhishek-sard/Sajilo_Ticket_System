@@ -1,0 +1,80 @@
+/* Reset and global styling */
+body,
+ul,
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo and title container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.logo-container h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: -32px;
+    /* Reduced gap between list items */
+    margin-left: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: rgb(156, 79, 28);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 50px;
+    /* Adjusted padding for better alignment */
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Content styling */
+.content {
+    padding: 70px 10px;
+    /* Account for fixed navbar height */
+    text-align: center;
+}
